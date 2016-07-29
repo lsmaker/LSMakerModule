@@ -34,7 +34,8 @@ void MyModule::execute(void){
   //Put here the code of you want to be executed periodically. This method will
   //be called by the LSMaker scheduler automatically. The calling frequency is
   //as soon as possible by default (62.5 us more or less). However, this
-  //behaviour can be modified if a period (in microseconds) is provided when //the module is attached to the LSMaker scheduler.
+  //behaviour can be modified if a period (in microseconds) is provided when
+  //the module is attached to the LSMaker scheduler.
 }
 
 void MyModule::destroy(void){
