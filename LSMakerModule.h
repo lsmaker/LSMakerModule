@@ -5,7 +5,7 @@
  *	Description: This class defines the interface between the LSMaker Scheduler
  *  and all of its third-party modules. For this reason, any module class that
  *  wants to be attatched to the LSMaker scheduler MUST inherit from this base
- *  class.
+ *  class and implement its virtual methods.
 ***/
 
 #ifndef _LSMAKER_LSMAKERMODULE_H_
