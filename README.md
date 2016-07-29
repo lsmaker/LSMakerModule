@@ -26,19 +26,26 @@ class MyModule : public LSMakerModule{
 #include "MyModule.h"
 
 void MyModule::init(void){
-  //Put here the code you want to be executed when the module is attached to the LSMaker scheduler.
+  //Put here the code you want to be executed when the module is attached to
+  //the LSMaker scheduler.
 }
 
 void MyModule::execute(void){
-  //Put here the code of you want to be executed periodically. This method will be called by the LSMaker scheduler automatically. The calling frequency is as soon as possible by default (62.5 us more or less). However, this behaviour can be modified if a period (in microseconds) is provided when the module is attached to the LSMaker scheduler.
+  //Put here the code of you want to be executed periodically. This method will
+  //be called by the LSMaker scheduler automatically. The calling frequency is
+  //as soon as possible by default (62.5 us more or less). However, this
+  //behaviour can be modified if a period (in microseconds) is provided when //the module is attached to the LSMaker scheduler.
 }
 
 void MyModule::destroy(void){
-  //Put here the code you want to be executed when the module is detached from the LSMaker scheduler.
+  //Put here the code you want to be executed when the module is detached from
+  //the LSMaker scheduler.
 }
 
 String MyModule::getModuleName{
-  //In this case, we should return a unique string that identifies the module. The module class name is often used as unique identifier but other conventions can be used.
+  //In this case, we should return a unique string that identifies the module.
+  //The module class name is often used as unique identifier but other
+  //conventions can be used.
   return "MyModule";
 }
 
