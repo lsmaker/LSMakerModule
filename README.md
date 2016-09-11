@@ -61,7 +61,7 @@ String MyModule::getModuleName{
 ```
 
 ## Download
-[LSMakerModule.zip](https://github.com/lsmaker/LSMakerModule/releases/download/1.0/LSMakerModule.zip)
+[LSMakerModule.zip](https://github.com/lsmaker/LSMakerModule/releases/download/1.1/LSMakerModule.zip)
 
 ## Clone
 **Using SSH**

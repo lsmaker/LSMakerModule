@@ -12,6 +12,7 @@
 #define _LSM_LSMAKERMODULE_H_
 
 namespace LSM{
+
     class LSMakerModule{
         public:
             virtual void init(void) = 0;
@@ -19,6 +20,7 @@ namespace LSM{
             virtual void destroy(void) = 0;
             virtual String getModuleName(void) = 0;
     };
+    
 }
 
 #endif
