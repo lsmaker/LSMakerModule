@@ -9,14 +9,20 @@ virtual methods:
 //Include the LSMakerModule class definition
 #include "External/LSMakerModule.h"
 
-//Implement the module class inheriting from LSMakerModule class.
-class MyModule : public LSMakerModule{
+//Define the module inside the LSM namespace.
 
-  public:
-    void init(void);
-    void execute(void);
-    void destroy(void);
-    String getModuleName(void);
+namespace LSM{
+
+  //Implement the module class inheriting from LSMakerModule class.
+  class MyModule : public LSMakerModule{
+
+    public:
+      void init(void);
+      void execute(void);
+      void destroy(void);
+      String getModuleName(void);
+
+  };
 
 }
 ```
@@ -24,6 +30,8 @@ class MyModule : public LSMakerModule{
 **MyModule.cpp**
 ```
 #include "MyModule.h"
+
+using namespace LSM;
 
 void MyModule::init(void){
   //Put here the code you want to be executed when the module is attached to

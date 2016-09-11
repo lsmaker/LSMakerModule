@@ -8,15 +8,17 @@
  *  class and implement its virtual methods.
 ***/
 
-#ifndef _LSMAKER_LSMAKERMODULE_H_
-#define _LSMAKER_LSMAKERMODULE_H_
+#ifndef _LSM_LSMAKERMODULE_H_
+#define _LSM_LSMAKERMODULE_H_
 
-class LSMakerModule{
-    public:
-        virtual void init(void) = 0;
-        virtual void execute(void) = 0;
-        virtual void destroy(void) = 0;
-        virtual String getModuleName(void) = 0;
-};
+namespace LSM{
+    class LSMakerModule{
+        public:
+            virtual void init(void) = 0;
+            virtual void execute(void) = 0;
+            virtual void destroy(void) = 0;
+            virtual String getModuleName(void) = 0;
+    };
+}
 
 #endif
